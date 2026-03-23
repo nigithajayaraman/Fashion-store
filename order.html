@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUMIÈRE | Place Your Order</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Collection</a>
+    <a href="order.html" class="active">Order</a>
+  </nav>
+
+  <header class="page-header">
+    <h1>Place Your Order</h1>
+    <p style="color: var(--text-secondary); font-size: 1.2rem;">Secure your exquisite piece today.</p>
+  </header>
+
+  <section class="order-section" id="success">
+    <div class="order-card">
+      <form action="#success">
+        <div class="input-group">
+          <input type="text" placeholder="Full Name" required>
+        </div>
+        <div class="input-group">
+          <input type="email" placeholder="Email Address" required>
+        </div>
+        <div class="input-group">
+          <input type="text" placeholder="Delivery Address" required>
+        </div>
+        <div class="input-group">
+          <select required>
+            <option value="" disabled selected>Select Your Dress</option>
+            <option>Crimson Elegance - ₹240.00</option>
+            <option>Noir Classic - ₹185.00</option>
+            <option>Botanical Breeze - ₹150.00</option>
+          </select>
+        </div>
+        <button type="submit" class="btn order-btn">Complete Purchase</button>
+      </form>
+
+      <!-- Success message hidden until targeted -->
+      <div class="success-message">
+        <h2>Order Confirmed</h2>
+        <p>Thank you for choosing LUMIÈRE. Your elegant piece is being prepared.</p>
+        <a href="index.html" class="btn">Return to Home</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 LUMIÈRE Fashion. All rights reserved.</p>
+  </footer>
+</body>
+</html>
